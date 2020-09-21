@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/MyScript.js"></script>
+
+    <style type="text/css">
+        .Table {
+            display: table;
+        }
+
+        .Title {
+            display: table-caption;
+            text-align: center;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .Heading {
+            display: table-row;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .Row {
+            display: table-row;
+        }
+
+        .Cell {
+            display: table-cell;
+            border: solid;
+            border-width: thin;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+
+</head>
+<body ng-app="single-page-app">
+    <div ng-controller="MyController">
+
+        <div class="Row">
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            <div class="Cell">
+                <p>Facebook</p>
+            </div>
+            <div class="Cell">
+                <p>Gmail</p>
+            </div>
+            <div class="Cell">
+                <p>Youtube</p>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell">
+                <p>QA</p>
+            </div>
+            <div class="Cell">
+                <a ng-click="openLinkWindow('facebook')">Facebook</a>
+            </div>
+            <div class="Cell">
+                <a ng-click="openLinkWindow('gmail')">Gmail</a>
+            </div>
+            <div class="Cell">
+                <a ng-click="openLinkWindow('youtube')">Youtube</a>
+            </div>
+            </div>
+        <div class="Row">
+            <div class="Cell">
+                <p>UAT</p>
+            </div>
+
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="Row">
+            <div class="Cell">
+                <p>Live system</p>
+            </div>
+
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            <div class="Cell">
+                <p>&nbsp;</p>
+            </div>
+            
+            </div>
+
+          
+
+        </div>
+</body>
+</html>  
